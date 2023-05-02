@@ -12,8 +12,5 @@ dependencies:
   - pip:
       - azure-ai-ml==1.2.0
       - azureml-mlflow==1.48.0
-      - 'monai[nibabel, ignite, tqdm]'
-      - numpy
       - tensorboard
-      - scikit-learn
       - matplotlib

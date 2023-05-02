@@ -28,6 +28,6 @@ code: .
 
 command: >-
   python run.py --blob_file ${{inputs.blob_file_location}} $[[--overwrite ${{inputs.overwrite}}]] --image_data_folder ${{outputs.image_data_folder}}
-environment: 
-  conda_file: ./conda.yaml
-  image: mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04
+environment: "azureml://registries/monai-assets/environments/inference-env/versions/1" 
+  # conda_file: ./conda.yaml
+  # image: mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04
